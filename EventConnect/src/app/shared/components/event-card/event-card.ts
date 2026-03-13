@@ -7,6 +7,7 @@ import { StripHtmlPipe } from '../../pipes/strip-html.pipe';
   standalone: true,
   imports: [CommonModule, StripHtmlPipe],
   templateUrl: './event-card.html',
+  styleUrl: './event-card.scss'
 })
 export class EventCardComponent {
   @Input() event: any;

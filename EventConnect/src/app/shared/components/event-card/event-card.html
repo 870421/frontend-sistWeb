@@ -10,7 +10,7 @@
 
     <p class="location">{{ event?.locationName }}</p>
 
-    <p class="description">{{ event?.description | slice:0:100 }}...</p>
+    <p class="description">{{ event?.description | stripHtml }}...</p>
 
     <a>Ver más >></a>
 
