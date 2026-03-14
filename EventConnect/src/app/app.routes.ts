@@ -5,6 +5,7 @@ import { HomeComponent } from './features/home/home.component';
 import { ExploreComponent } from './features/explore/explore.component';
 import { MapComponent } from './features/map/map.component';
 import { EventDetailComponent } from './features/event-detail/event-detail.component';
+import { ProfileViewComponent } from './features/profile/profile-view/profile-view.component';
 import { authGuard } from './core/guards/auth.guard';
 
 //! Añadir el AuthGuard al final del desarrollo
@@ -16,4 +17,5 @@ export const routes: Routes = [
   { path: 'explore', component: ExploreComponent },
   { path: 'map', component: MapComponent },
   { path: 'events/:id', component: EventDetailComponent },
+  { path: 'profile', component: ProfileViewComponent, canActivate: [authGuard] },
 ];
